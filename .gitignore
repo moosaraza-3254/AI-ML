@@ -20,3 +20,5 @@ __pycache__/
 
 # Windows
 Thumbs.db
+datasets/cifar10/
+*.tar.gz

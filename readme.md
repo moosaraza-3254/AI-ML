@@ -30,6 +30,7 @@ AI-ML/
 - ✅ Assignment 2 – Decision Tree Classification
 - ✅ Assignment 2 – K-Means Clustering
 - ✅ Assignment 3 – Convolutional Neural Network (CNN) for CIFAR-10 Image Classification
+- ✅ Assignment 4 – Hugging Face Pipeline for IMDb Sentiment Classification
 - 🔄 More assignments and projects will be added throughout the internship.
 
 ---

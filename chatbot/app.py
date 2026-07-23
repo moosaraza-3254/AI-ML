@@ -1,25 +1,5 @@
-from pathlib import Path
-import os
-
-from dotenv import load_dotenv
-from openai import OpenAI
-
-# Load environment variables
-load_dotenv(dotenv_path=Path(__file__).parent / ".env")
-
-api_key = os.getenv("OPENROUTER_API_KEY")
-MODEL = os.getenv("MODEL")
-
-if not api_key:
-    raise ValueError("OPENROUTER_API_KEY not found.")
-
-if not MODEL:
-    raise ValueError("MODEL not found.")
-
-client = OpenAI(
-    api_key=api_key,
-    base_url="https://openrouter.ai/api/v1"
-)
+from config import client, MODEL
+from prompts import SYSTEM_PROMPT
 
 print("=" * 50)
 print("OpenRouter CLI Chatbot")
@@ -39,6 +19,10 @@ while True:
         response = client.chat.completions.create(
             model=MODEL,
             messages=[
+                {
+                    "role": "system",
+                    "content": SYSTEM_PROMPT
+                },
                 {
                     "role": "user",
                     "content": user_input

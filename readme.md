@@ -11,7 +11,9 @@ As the internship progresses, this repository will be updated with new assignmen
 ## 📂 Repository Structure
 
 ```text
-AI-ML/
+AI-ML Internship/
+│
+├── chatbot/
 │
 ├── datasets/
 │
@@ -20,7 +22,6 @@ AI-ML/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-```
 
 ---
 
@@ -28,9 +29,10 @@ AI-ML/
 
 - ✅ Assignment 1 – Linear Regression
 - ✅ Assignment 2 – Decision Tree Classification
-- ✅ Assignment 2 – K-Means Clustering
-- ✅ Assignment 3 – Convolutional Neural Network (CNN) for CIFAR-10 Image Classification
-- ✅ Assignment 4 – Hugging Face Pipeline for IMDb Sentiment Classification
+- ✅ Assignment 3 – K-Means Clustering
+- ✅ Assignment 4 – Convolutional Neural Network (CNN) for CIFAR-10 Image Classification
+- ✅ Assignment 5 – Hugging Face Pipeline for IMDb Sentiment Classification
+- ✅ Assignment 6 – Command-Line Chatbot with OpenRouter API (System Prompt, Conversation History & JSON Responses)
 - 🔄 More assignments and projects will be added throughout the internship.
 
 ---

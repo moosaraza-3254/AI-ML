@@ -1,14 +1,18 @@
+from fastapi import FastAPI
 from transformers import pipeline
 
-# Load the pretrained sentiment analysis pipeline
-classifier = pipeline("sentiment-analysis")
+# Create the FastAPI application
+app = FastAPI()
 
-# Test the model with sample text
-sample_text = "I love learning FastAPI."
+# Load the pretrained sentiment analysis model
+classifier = pipeline(
+    task="sentiment-analysis",
+    model="distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+)
 
-# Generate prediction
-result = classifier(sample_text)
-
-# Display the result
-print("Input Text:", sample_text)
-print("Prediction:", result)
+# Root endpoint
+@app.get("/")
+def home():
+    return {
+        "message": "Welcome to the Sentiment Analysis API!"
+    }
